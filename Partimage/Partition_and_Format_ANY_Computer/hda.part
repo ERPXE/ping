@@ -1,0 +1,14 @@
+;[Partition number] [Partition Size] [Partition Type] [Label] [Boot flag]
+;
+1	4000M	7	SYSTEM	*
+2	+	7	DATA	/
+
+
+;Format:
+;  - TAB-separated CSV file.
+;  - Blank lines are ignored.
+;  - Leading ; means that line is commented out.
+;  - Partition size: 20000M or 20000000K or 20000000000
+;  - Partition size: + means: affect the whole remaining space.
+;  - Partition type: see unix fdisk (7 = ntfs, c = fat32, 83 = ext2/3, etc.)
+;  - Boot flag: * means bootable. Other: not bootable.
